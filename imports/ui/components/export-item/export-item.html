@@ -1,0 +1,9 @@
+<template name="exportItem">
+	<li>
+		id: {{ _id }} <br>
+		progress: {{ progress }}% <br>
+		{{#if downloadUrl}}
+			download url: {{ downloadUrl }}
+		{{/if}}
+	</li>
+</template>

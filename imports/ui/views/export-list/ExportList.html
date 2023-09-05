@@ -1,0 +1,12 @@
+<template name="exportList">
+
+	<button id="trigger-new-export">Export</button>
+
+	<h1>Export list</h1>
+	<ul class="exports">
+		{{#each exports}}
+			{{> exportItem}}
+		{{/each}}
+	</ul>
+
+</template>

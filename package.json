@@ -1,0 +1,25 @@
+{
+  "name": "lempire",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --driver-package meteortesting:mocha",
+    "test:watch": "TEST_WATCH=1 meteor test --driver-package meteortesting:mocha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "jquery": "^3.6.0",
+    "meteor-node-stubs": "^1.2.1",
+    "uuid": "^9.0.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "expect": "^29.6.4"
+  }
+}
